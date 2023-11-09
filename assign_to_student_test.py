@@ -7,7 +7,7 @@ def test_assign_to_student():
         assert assign_to_student.submission(-1) == -2
         print("All Tests Passed") # print statements should appear in "actions" tab
     except:
-        print("Tests Failed")
+        raise Exception("Tests Failed")
 
     # if you want to print specifically what testcase failed,
     # then you can create separate try/except clauses
